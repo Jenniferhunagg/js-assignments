@@ -1,0 +1,32 @@
+body{
+    background-color: azure;
+}
+.top{
+    font-size: 80px;
+    color: lightgrey;
+}
+.name{
+    margin-top: 40px;
+}
+.information1,.information2, .name, .top{
+    display: flex;
+    justify-content: center;
+}
+.information1,.information2,.name{
+    font-size: 30px;
+}
+.name{
+    color: lightpink;
+}
+.information1{
+    color: lightblue;
+}
+.information2{
+    color: lightgreen;
+}
+.image{
+    height: 500px;
+    width: 500px;
+    display: block;
+    margin: auto;
+}
