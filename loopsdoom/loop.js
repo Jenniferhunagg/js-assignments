@@ -54,7 +54,7 @@ for (q6 = 1; q6 < 8; q6++ ){
 //7
 document.write("Question 7")
 document.write('<br>')
-for (q7 = 1; q7 < 8; q7++ ){
+for (q7 = 1; q7 <6; q7++ ){
     for(i=1; i<=q7; i++){
         for(j=1; j<=i; j++){
             document.write("🦴 ")
