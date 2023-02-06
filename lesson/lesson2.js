@@ -34,15 +34,15 @@
 //if(number <=10 && number>=5){
     //console.log("It is a medium number")
 //}
-let number = prompt("Choes a number")
-number = parseInt(number)
+//let number = prompt("Choes a number")
+//number = parseInt(number)
 
-if (number === 1){
-    console.log("You are correct")
-} else if (number >= 5) {
-    console.log("Number is too big")
-} else if (number <= 0.9) {
-    console.log("Number is too small")
-} else{
-    console.log("The answer is close")
-}
+//if (number === 1){
+//    console.log("You are correct")
+//} else if (number >= 5) {
+//    console.log("Number is too big")
+//} else if (number <= 0.9) {
+//    console.log("Number is too small")
+//} else{
+//    console.log("The answer is close")
+//}
