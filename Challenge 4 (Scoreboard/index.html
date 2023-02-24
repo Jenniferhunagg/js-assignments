@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="border">
+        <div class="Topic">Scoreboard </div>
+        <div class="box">
+            <div class="team1">
+                <h1 class="one">Team 1</h1>
+                <div class="team1Point">0</div>
+                <div class="button">
+                    <button onclick="add1T1()">+1</button>
+                    <button onclick="add2T1()">+2</button>
+                    <button onclick="add3T1()">+3</button>
+                    <button onclick="resetT1()">Reset</button>
+                    <button onclick="team1Name()">Rename</button>
+                </div>
+            </div>
+            <div class="timer">
+                <div class="time">00:00</div>
+                <div class="button-time">
+                    <button onclick="start()">Start</button>
+                    <button onclick="stop()">Stop</button>
+                    <button onclick="reset()">Reset</button>
+                </div>
+            </div>
+            <div class="team2">
+                <h1 class="two">Team 2 </h1>
+                <div class="team2Point">0</div>
+                <div class="button">
+                    <button onclick="add1T2()">+1</button>
+                    <button onclick="add2T2()">+2</button>
+                    <button onclick="add3T2()">+3</button>
+                    <button onclick="resetT2()">Reset</button>
+                    <button onclick="team2Name()">Rename</button>
+                </div>
+            </div>
+        </div>
+        <div class="roung">
+            <div class="title">Quarter </div>
+            <div class="quarterTime">0</div>
+            <div class="buttonQuarter">
+                <button onclick="add1Quarter()">+1</button>
+                <button onclick="reduceQuarter()">-1</button>
+                <button onclick="resetQuarter()">Reset</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="Scoreboard.js"></script>
+
+</body>
+</html>

@@ -42,8 +42,32 @@ function add3(people1,people2){
     console.log("Hellow "+ people1 +"and "+ people2)
 }
 //call with argument 
-reject('Jennifer')
-add(2)
-multiply(2,10)
-add2(50)
-add3("Jennifer", "Emily")
+//reject('Jennifer')
+//add(2)
+//multiply(2,10)
+//add2(50)
+//add3("Jennifer", "Emily")
+
+//callback function 
+//function as argumnets 
+function sayHi(){
+    console.log("Hi")
+}
+//(function, time(s))
+setTimeout(sayHi, 2000)
+
+// setInterval
+function sayBye(){
+    console.log("bye")
+}
+//happen again and agian 
+setInterval(sayBye, 2000)
+
+
+function hi(num1,num2){
+    const answeer= num1 *num2
+    console.log(answeer)
+}
+setTimeout(hi(2,3), 2000)
+
+
