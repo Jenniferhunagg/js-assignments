@@ -80,7 +80,7 @@ function time(){
   }
 }
 function start(){
-  RepeatTime = setInterval(time, 1000);
+    RepeatTime = setInterval(time, 1000);
 }
 function stop(){
   clearInterval(RepeatTime);

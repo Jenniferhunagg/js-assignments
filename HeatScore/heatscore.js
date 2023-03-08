@@ -34,7 +34,6 @@ if(gender == "girl") {
 
     document.write("<div class='score'>Attraciveness score is " + average + "</div>")
 }
-
 if (average <=50){
     document.write("<div class='result'> Not interesting</div>")
     document.write(`<img class="picture1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Sad_face.svg/2061px-Sad_face.svg.png"></img>`)
