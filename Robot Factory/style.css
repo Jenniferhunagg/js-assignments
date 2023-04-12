@@ -1,0 +1,26 @@
+.input {
+    display: inline-block;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    width: 100vw;
+    word-spacing: 10px;
+}
+.infor{
+  margin-top:250px;
+}
+body{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNpoyxVLBgjkdzO0uNyS8qknSaEYNRyf22_5yU2Z8mb-LSGF4Ussw1932uiNyzYsnSFa8&usqp=CAU);
+    color: white;
+    margin:0;
+    font-size: 1.8rem;
+    background-position: center;
+    background-size: cover;
+}
+.food{
+    width: 145px;
+
+}
