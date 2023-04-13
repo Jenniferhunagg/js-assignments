@@ -22,6 +22,8 @@
   //  namelist.push(names)
 //}
 
+
+
 //lesson 11
 //localStorage.setItem("pet", "dog")
 
@@ -36,7 +38,30 @@ function update(){
      localStorage.setItem("name", name1)
 
    console.log(name1)
-
 }
 
 
+//change thing to be string 
+const data = [
+  {
+      name: 'Jennifer',
+      grade: 10
+  },
+  {
+      name: 'Emily',
+      grade: 10
+  },
+]
+//change it be string 
+const stringData = JSON.stringify(data)
+// saave to localstorage
+localStorage.setItem('studentArray',stringData)
+//get the data back
+const gotData = localStorage.getItem("studentArray")
+
+console.log(gotData[0])
+//change it be JSON (to be object)
+const covertedData =JSON.parse(gotData)
+
+console.log(covertedData[0])
+console.log(covertedData[0].name)
