@@ -1,59 +1,58 @@
-let tacoRobots = []
-let hamburgerRobot = []
-let brownieRobot = []
-// 1. Create a class for your robots
-
-// Attack
+let tacoRobots = [];
+let hamburgerRobots = [];
+let brownieRobots = [];
 
 class FoodRobot {
-    constructor(type, many) {
-        this.type = type
-        this.many = many
-    }
-    food() {
-        console.log(`food! ${this.type}`)
-    }
-}
-// 1. crect the value into class
+  constructor(name, type, many) {
+    this.name = name;
+    this.type = type;
+    this.many = many;
+  }
 
+  food() {
+    console.log(`food! ${this.type}`);
+  }
+}
 
 function submit() {
+  const img = document.createElement("img");
 
-    // 1. read the value from the input
-    const tData = document.querySelector(".food").value
-    const mData = document.querySelector(".many").value
+  const nData = document.querySelector(".name").value;
+  const fData = document.querySelector(".food").value;
+  const mData = document.querySelector(".many").value;
 
-    // 2. console.log the value to confirm we have it
-    console.log(tData, mData)
+  console.log(nData, fData, mData);
 
-    // 3. create object with form data
-    const foodRobot1 = new FoodRobot(tData, mData)
-    console.log(foodRobot1.type)
-    console.log(foodRobot1.many)
+  const foodRobot = new FoodRobot(nData, fData, mData);
+  console.log(foodRobot.name);
+  console.log(foodRobot.type);
+  console.log(foodRobot.many);
 
-    if (tData==="taco") {
-        tacoRobots.push(foodRobot1)
-    }else if (tData==="hamburger"){
-        hamburgerRobot.push(foodRobot1)
-    }else if (tData==="brownie"){
-        brownieRobot.push(foodRobot1)
-    }
+  if (fData === "taco") {
+    tacoRobots.push(foodRobot);
+    const tacoRobotsString = JSON.stringify(tacoRobots);
+    localStorage.setItem("tacoArray", tacoRobotsString);
+  } else if (fData === "hamburger") {
+    hamburgerRobots.push(foodRobot);
+    const hamburgerRobotsString = JSON.stringify(hamburgerRobots);
+    localStorage.setItem("hamburgerArray", hamburgerRobotsString);
+  } else if (fData === "brownie") {
+    brownieRobots.push(foodRobot);
+    const brownieRobotsString = JSON.stringify(brownieRobots);
+    localStorage.setItem("brownieArray", brownieRobotsString);
+  }
+
+  const tacoGotData = localStorage.getItem("tacoArray");
+  const hamburgerGotData = localStorage.getItem("hamburgerArray");
+  const brownieGotData = localStorage.getItem("brownieArray");
+
+  tacoRobots = JSON.parse(tacoGotData) || [];
+  hamburgerRobots = JSON.parse(hamburgerGotData) || [];
+  brownieRobots = JSON.parse(brownieGotData) || [];
 }
 
-/*
 
-= assigns a value
-== soft comparison (checks value is same)
-=== hard comparison (checks value AND data type is same)
-
-*/
-
-
-
-
-
-// const newRobot = new AttackRobot('jen', 'basketball')
-
-// 2. Create an Add Function
-//      - create an object from the class
-//      - add to the array
+document.querySelector('.img-container').innerHTML = `
+    <h1>Hi</h1>
+    <p>this is a p</p>
+`

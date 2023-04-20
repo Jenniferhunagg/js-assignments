@@ -5,24 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="page1.css" />
   </head>
   <body>
     <div class="input">
       <h1 class="infor">Create food robot</h1>
+      <input class="name" type="text" placeholder="Give robot a name" />
+      <br/>
       <select name="food" class="food">
         <option value="taco">Taco</option>
         <option value="hamburger">Hamburger</option>
         <option value="brownie">Brownie</option>
       </select>
-      <br />
+      <br/>
       <input class="many" type="text" placeholder="How much food?" />
-      <br />
-      <button onclick="del()">Delete</button>
-      <button onclick="add()">Add</button>
-      <br />
-      <button onclick="submit()">Submit</button>
+      <br/>
+      <button class="sub"onclick="submit()">Submit</button>
+      <br/>
+      <input class="destory" type="text" placeholder="Robot name?" />
+      <button onclick="del()">Destory</button>
     </div>
+    <div class="img-container"></div>
     <script src="robot.js"></script>
   </body>
 </html>

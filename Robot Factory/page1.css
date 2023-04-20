@@ -22,5 +22,9 @@ body{
 }
 .food{
     width: 145px;
-
+}
+.sub{    width: 10vw;
+}
+.topic{
+  text-align: center;
 }
