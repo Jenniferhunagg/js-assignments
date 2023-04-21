@@ -1,7 +1,3 @@
-// 1. Get local storage arrays ok 
-// 2. Put it into the arrays ok 
-// 3. use forEach() to write HTML for each robot
-
 let tacoRobots = [];
 let hamburgerRobots = [];
 let brownieRobots = [];
@@ -19,8 +15,6 @@ class FoodRobot {
 }
 
 function submit() {
-  const img = document.createElement("img");
-
   const nData = document.querySelector(".name").value;
   const fData = document.querySelector(".food").value;
   const mData = document.querySelector(".many").value;
@@ -32,43 +26,55 @@ function submit() {
   console.log(foodRobot.type);
   console.log(foodRobot.many);
 
-  if (fData === "taco") {
+
+  
+
+  document.querySelector(".img-container").innerHTML = "";
+  
+
+  if (fData === "Taco") {
     tacoRobots.push(foodRobot);
     const tacoRobotsString = JSON.stringify(tacoRobots);
     localStorage.setItem("tacoArray", tacoRobotsString);
+
     tacoRobots.forEach(function(element) {
         console.log(element);
     
         document.querySelector(".img-container").innerHTML += `
-            <h2 class='student-name'>${element.name}</h2>
-            <p>${element.type}</p>
-            <p>${element.many}</p>
+            <h2 class='student-name'>Robot name: ${element.name}</h2>
+            <p>What will Robot cook for: ${element.type}</p>
+            <p>How many food does Robot make: ${element.many}</p>
+            <img src="https://pbs.twimg.com/profile_images/1267951139/255147712_400x400.png" />
         `;
       });
-  } else if (fData === "hamburger") {
+  } else if (fData === "Hamburger") {
     hamburgerRobots.push(foodRobot);
     const hamburgerRobotsString = JSON.stringify(hamburgerRobots);
     localStorage.setItem("hamburgerArray", hamburgerRobotsString);
     hamburgerRobots.forEach(function(element) {
         console.log(element);
-    
+
+
         document.querySelector(".img-container").innerHTML += `
             <h2 class='student-name'>Robot name: ${element.name}</h2>
-            <p>What will Robot do: ${element.type}</p>
+            <p>What will Robot cook for: ${element.type}</p>
             <p>How many food does Robot make: ${element.many}</p>
+            <img src="https://www.csaimages.com/pix/COAR/C/C838200_WP.JPG" />
         `;
       });
-  } else if (fData === "brownie") {
+  } else if (fData === "Brownie") {
     brownieRobots.push(foodRobot);
     const brownieRobotsString = JSON.stringify(brownieRobots);
     localStorage.setItem("brownieArray", brownieRobotsString);
+    
+
     brownieRobots.forEach(function(element) {
         console.log(element);
-    
         document.querySelector(".img-container").innerHTML += `
-            <h2 class='student-name'>${element.name}</h2>
-            <p>${element.type}</p>
-            <p>${element.many}</p>
+            <h2 class='student-name'>Robot name: ${element.name}</h2>
+            <p>What will Robot cook for: ${element.type}</p>
+            <p>ow many food does Robot make: ${element.many}</p>
+            <img src="https://p7.storage.canalblog.com/78/33/1355766/114525632_o.jpeg" />
         `;
       });
   }
@@ -82,6 +88,7 @@ function submit() {
   brownieRobots = JSON.parse(brownieGotData) || [];
 
 }
+
 
 
 
