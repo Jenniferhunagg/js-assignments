@@ -13,7 +13,6 @@ class FoodRobot {
     console.log(`food! ${this.type}`);
   }
 }
-
 function submit() {
   const nData = document.querySelector(".name").value;
   const fData = document.querySelector(".food").value;
@@ -25,9 +24,6 @@ function submit() {
   console.log(foodRobot.name);
   console.log(foodRobot.type);
   console.log(foodRobot.many);
-
-
-  
 
   document.querySelector(".img-container").innerHTML = "";
   
@@ -44,7 +40,7 @@ function submit() {
             <h2 class='student-name'>Robot name: ${element.name}</h2>
             <p>What will Robot cook for: ${element.type}</p>
             <p>How many food does Robot make: ${element.many}</p>
-            <img src="https://pbs.twimg.com/profile_images/1267951139/255147712_400x400.png" />
+            <img src="https://pbs.twimg.com/profile_images/1267951139/255147712_400x400.png" width="400" height="400"/>
         `;
       });
   } else if (fData === "Hamburger") {
@@ -59,7 +55,7 @@ function submit() {
             <h2 class='student-name'>Robot name: ${element.name}</h2>
             <p>What will Robot cook for: ${element.type}</p>
             <p>How many food does Robot make: ${element.many}</p>
-            <img src="https://www.csaimages.com/pix/COAR/C/C838200_WP.JPG" />
+            <img src="https://www.csaimages.com/pix/COAR/C/C838200_WP.JPG" width="400" height="400"/>
         `;
       });
   } else if (fData === "Brownie") {
@@ -73,8 +69,8 @@ function submit() {
         document.querySelector(".img-container").innerHTML += `
             <h2 class='student-name'>Robot name: ${element.name}</h2>
             <p>What will Robot cook for: ${element.type}</p>
-            <p>ow many food does Robot make: ${element.many}</p>
-            <img src="https://p7.storage.canalblog.com/78/33/1355766/114525632_o.jpeg" />
+            <p>How many food does Robot make: ${element.many}</p>
+            <img src="https://p7.storage.canalblog.com/78/33/1355766/114525632_o.jpeg" width="400" height="400"/>
         `;
       });
   }
