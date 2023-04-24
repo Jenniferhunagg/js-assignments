@@ -3,27 +3,26 @@ let hamburgerRobots = [];
 let brownieRobots = [];
 
 class FoodRobot {
-  constructor(name, type, many) {
+  constructor(name, type, many, image) {
     this.name = name;
     this.type = type;
     this.many = many;
-  }
-
-  food() {
-    console.log(`food! ${this.type}`);
+    this.image =image
   }
 }
 function submit() {
   const nData = document.querySelector(".name").value;
   const fData = document.querySelector(".food").value;
   const mData = document.querySelector(".many").value;
+  const iData = document.querySelector(".image").value;
 
-  console.log(nData, fData, mData);
+  console.log(nData, fData, mData,iData );
 
-  const foodRobot = new FoodRobot(nData, fData, mData);
+  const foodRobot = new FoodRobot(nData, fData, mData, iData)
   console.log(foodRobot.name);
   console.log(foodRobot.type);
   console.log(foodRobot.many);
+  console.log(foodRobot.image);
 
   document.querySelector(".img-container").innerHTML = "";
   
@@ -40,7 +39,7 @@ function submit() {
             <h2 class='student-name'>Robot name: ${element.name}</h2>
             <p>What will Robot cook for: ${element.type}</p>
             <p>How many food does Robot make: ${element.many}</p>
-            <img src="https://pbs.twimg.com/profile_images/1267951139/255147712_400x400.png" width="400" height="400"/>
+            <img src= "${element.image}" width="400" height="400"/>
         `;
       });
   } else if (fData === "Hamburger") {
@@ -55,7 +54,7 @@ function submit() {
             <h2 class='student-name'>Robot name: ${element.name}</h2>
             <p>What will Robot cook for: ${element.type}</p>
             <p>How many food does Robot make: ${element.many}</p>
-            <img src="https://www.csaimages.com/pix/COAR/C/C838200_WP.JPG" width="400" height="400"/>
+            <img src= "${element.image}" width="400" height="400"/>
         `;
       });
   } else if (fData === "Brownie") {
@@ -70,11 +69,10 @@ function submit() {
             <h2 class='student-name'>Robot name: ${element.name}</h2>
             <p>What will Robot cook for: ${element.type}</p>
             <p>How many food does Robot make: ${element.many}</p>
-            <img src="https://p7.storage.canalblog.com/78/33/1355766/114525632_o.jpeg" width="400" height="400"/>
+            <img src= "${element.image}" width="400" height="400"/>
         `;
       });
   }
-
   const tacoGotData = localStorage.getItem("tacoArray");
   const hamburgerGotData = localStorage.getItem("hamburgerArray");
   const brownieGotData = localStorage.getItem("brownieArray");
@@ -82,7 +80,6 @@ function submit() {
   tacoRobots = JSON.parse(tacoGotData) || [];
   hamburgerRobots = JSON.parse(hamburgerGotData) || [];
   brownieRobots = JSON.parse(brownieGotData) || [];
-
 }
 
 
