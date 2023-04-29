@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="input">
-      <h1 class="infor">Create food robot</h1>
-      <input class="name" type="text" placeholder="Give robot a name" />
-      <br/>
-      <select name="food" class="food">
-        <option value="Taco">Taco</option>
-        <option value="Hamburger">Hamburger</option>
-        <option value="Brownie">Brownie</option>
-      </select>
-      <br/>
-      <input class="many" type="text" placeholder="How much food?" />
-      <br/>
-      <input class="image" type="text" placeholder="URL" />
-      <br/>
-      <button class="sub"onclick="submit()">Submit</button>
-      <br/>
-      <select name="des-food" class="des-food">
-        <option value="Taco">Taco</option>
-        <option value="Hamburger">Hamburger</option>
-        <option value="Brownie">Brownie</option>
-      </select>
-      <input class="destory" type="text" placeholder="Robot name?" />
-      <button onclick="del()">Destory</button>
-    </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="input">
+    <h1 class="infor">Create food robot</h1>
+    <input class="name" type="text" placeholder="Give robot a name" />
+    <br />
+    <select name="food" class="food">
+      <option value="Taco">Taco</option>
+      <option value="Hamburger">Hamburger</option>
+      <option value="Brownie">Brownie</option>
+    </select>
+    <br />
+    <input class="many" type="text" placeholder="How much food?" />
+    <br />
+    <input class="image" type="text" placeholder="URL" />
+    <br />
+    <button class="sub" onclick="submit()">Submit</button>
+    <br />
+    <select name="destory-food" class="destory-food">
+      <option value="Taco">Taco</option>
+      <option value="Hamburger">Hamburger</option>
+      <option value="Brownie">Brownie</option>
+    </select>
+    <input class="destory-name" type="text" placeholder="Robot name?" />
+    <button onclick="del()">Destory</button>
+  </div>
+  <div class="robotInfor">
     <div class="img-container"></div>
-    <script src="robot.js"></script>
-  </body>
+  </div>
+  <script src="robot.js"></script>
+</body>
 </html>

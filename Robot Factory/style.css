@@ -1,33 +1,57 @@
+* {
+  margin: 0;
+}
+
 .input {
-    display: inline-block;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    height: 100vh;
-    width: 100vw;
-    word-spacing: 10px;
-}
-.infor{
-  margin-top:250px;
-}
-body{
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNpoyxVLBgjkdzO0uNyS8qknSaEYNRyf22_5yU2Z8mb-LSGF4Ussw1932uiNyzYsnSFa8&usqp=CAU);
-    color: white;
-    margin:0;
-    font-size: 1.8rem;
-    background-position: center;
-    background-size: cover;
-}
-.food{
-    width: 145px;
-}
-.sub{    width: 10vw;
-}
-.topic{
+  background-image: url(https://d32bxxnq6qs937.cloudfront.net/sites/default/files/smartgames_robot-fatory_thumbnail_2.jpg);
+  color: white;
+  font-size: 1.8rem;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
   text-align: center;
 }
+
+.infor {
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  background-color: lightcoral;
+  border: 4mm ridge rgba(211, 220, 50, .6);
+}
+
+.food {
+  width: 145px;
+}
+
+.sub {
+  width: 10vw;
+}
+
+.topic {
+  text-align: center;
+}
+
+.robotInfor {
+  background-color: lightblue;
+}
+
 .img-container {
-  margin-left: 38%;
+  margin-left: 20%;
+}
+
+.robot {
+  display: inline-flex;
+}
+
+.robotInformation {
+  margin-left: 15px;
+  font-size: 25px;
+}
+
+.nameRobot {
+  margin-bottom: 80px;
 }
