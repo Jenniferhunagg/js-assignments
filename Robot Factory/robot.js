@@ -10,6 +10,7 @@ class FoodRobot {
     this.image = image
   }
 }
+
 function submit() {
   const nData = document.querySelector(".name").value;
   const fData = document.querySelector(".food").value;
