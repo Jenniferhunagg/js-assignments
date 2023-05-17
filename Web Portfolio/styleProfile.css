@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap');
+
+*{
+    background-color: lightblue;
+}
+.myName{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 100px;
+    font-family: 'Dancing Script', cursive;
+
+}
+.myInfor{
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    margin-top: 8%;
+    font-size: 40px;
+}
+.project{
+    margin-left: 37%;
+    display: flex;
+    font-family: 'Crimson Text', serif;
+}
+#audio, #robot, #typing{
+    margin-left: 30px;
+}

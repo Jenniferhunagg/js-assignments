@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+}
+
+.input {
+  background-image: url(https://d32bxxnq6qs937.cloudfront.net/sites/default/files/smartgames_robot-fatory_thumbnail_2.jpg);
+  color: white;
+  font-size: 1.8rem;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  text-align: center;
+}
+
+.infor {
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  background-color: lightcoral;
+  border: 4mm ridge rgba(211, 220, 50, .6);
+}
+
+.food {
+  width: 145px;
+}
+
+.sub {
+  width: 10vw;
+}
+
+.topic {
+  text-align: center;
+}
+
+.robotInfor {
+  background-color: lightblue;
+}
+
+.img-container {
+  margin-left: 20%;
+}
+
+.robot {
+  display: inline-flex;
+}
+
+.robotInformation {
+  margin-left: 15px;
+  font-size: 25px;
+}
+.nameRobot {
+  margin-bottom: 80px;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  background-color: lightcoral;
+}
+#audio, #homePage, #typing{
+  margin-left: 30px;
+}

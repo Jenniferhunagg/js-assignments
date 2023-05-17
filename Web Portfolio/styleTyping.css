@@ -1,0 +1,66 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.topic{
+    display: flex;
+    justify-content: center;
+}
+.title{
+    margin-top: 5px;
+    font-size: 50px;
+    color: yellow
+}
+.gif{
+    width: 60px;
+    height: 60px;
+    margin-top: 9px;
+    margin-left: 5px;
+}
+.backGround{
+    background-image: url("https://www.erintegration.com/wp-content/uploads/2022/07/Blog-Square-Featured-Image-7.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+.titleBox, .scoreBox{
+    display: flex;
+    justify-content: space-around;
+}
+.scoreTitle,.scoreAcc,.scoreWPM, .scoreAccAv, .scoreWPMAv{
+    background-color: #32a1ce;
+    width: 200px;
+    text-align: center;
+    border: thick double yellow;
+}
+.scoreTitle{
+    font-size: 20px;
+    margin-top: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.scoreWPM,.scoreAcc, .scoreAccAv, .scoreWPMAv {
+    font-size: 50px;
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.latest{
+    display: flex;
+    background-color: #32a1ce;
+    border: thick double yellow;
+    font-size: 40px;
+    width: 700px;
+    margin-top: 14px;
+    margin-left: 400px;
+}
+.latestTitle, .latestWAP, .latesAcc{
+    margin-left: 30px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: lightcoral;
+}
+#audio, #robot, #homePage{
+    margin-left: 30px;
+}

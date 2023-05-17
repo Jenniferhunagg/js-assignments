@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styleRobot.css" />
+</head>
+
+<body>
+  <div class="input">
+    <h1 class="infor">Create food robot</h1>
+    <input class="name" type="text" placeholder="Give robot a name" />
+    <br />
+    <select name="food" class="food">
+      <option value="Taco">Taco</option>
+      <option value="Hamburger">Hamburger</option>
+      <option value="Brownie">Brownie</option>
+    </select>
+    <br />
+    <input class="many" type="text" placeholder="How much food?" />
+    <br />
+    <input class="image" type="text" placeholder="URL" />
+    <br />
+    <button class="sub" onclick="submit()">Submit</button>
+    <br />
+    <select name="destory-food" class="destory-food">
+      <option value="Taco">Taco</option>
+      <option value="Hamburger">Hamburger</option>
+      <option value="Brownie">Brownie</option>
+    </select>
+    <input class="destory-name" type="text" placeholder="Robot name?" />
+    <button onclick="del()">Destory</button>
+  </div>
+  <div class="robotInfor">
+    <div class="img-container"></div>
+  </div>
+
+  <div class="menu">
+    <!-- home btn -->
+    <button id="homePage" onclick="homePage()">
+      <img src="https://play-lh.googleusercontent.com/vr1isZKzTtlok9P81H6cR98iqpPhkuQHJp19Z5kPej3QlhNTnLohXpqcgMqrQpyegA" height="60" width="60">
+    </button>   
+    <!-- another btn -->
+    <button id="audio" onclick="audio()">
+      <img src="https://yt3.googleusercontent.com/ytc/AGIKgqPmFbh4WiZlfw9spG8Dtoy8zY616IV9tAB7A9oGyg=s900-c-k-c0x00ffffff-no-rj" height="80" width="80">
+    </button>   
+    <!-- another btn -->
+    <button id="typing" onclick="typing()">
+      <img src="https://img.freepik.com/free-vector/hands-typing-computer-keyboard_1308-119670.jpg?w=2000" height="80" width="80">
+  </button>  
+  </div>
+
+  <script src="robot.js"></script>
+</body>
+</html>
