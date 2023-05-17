@@ -1,20 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap');
 
-*{
-    background-color: lightblue;
+body{
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(26, 26, 27, 0.5), rgba(48, 44, 46, 0.5)),url("https://t4.ftcdn.net/jpg/01/29/17/11/360_F_129171199_9gcj9qsEfB35y9n3wagMQNXPrmVZIBYI.jpg");
+    color:aliceblue;
 }
 .myName{
     text-align: center;
     margin-top: 10%;
     font-size: 100px;
+    animation-name: myNameAnimation;
+    animation-duration: 1s;
     font-family: 'Dancing Script', cursive;
-
+}
+@keyframes myNameAnimation {
+    0% {
+        transform: translateY(-300px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+  
 }
 .myInfor{
     text-align: center;
     font-family: 'Crimson Text', serif;
-    margin-top: 8%;
+    margin-top: 2%;
     font-size: 40px;
 }
 .project{
@@ -25,3 +38,29 @@
 #audio, #robot, #typing{
     margin-left: 30px;
 }
+
+.information{
+    animation-name: informationAnimation;
+    animation-duration: 3s;
+
+}
+@keyframes informationAnimation{
+    0% {
+        transform: translateX(50vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+} 
+.project, .button{
+    animation-name: projectAnimation;
+    animation-duration: 3s;
+}
+@keyframes projectAnimation{
+    0% {
+        transform: translateY(50vw);
+    }
+    100% {
+        transform: translateY(0vw);
+    }
+} 
